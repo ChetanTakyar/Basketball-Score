@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h3>HOME</h3>
+        <h2
+          class="score"
+          id="home-score-el">
+          0
+        </h2>
+        <div>
+          <button
+            class="button-group"
+            onclick="homeAddOne()">
+            +1
+          </button>
+          <button
+            class="button-group"
+            onclick="homeAddTwo()">
+            +2
+          </button>
+          <button
+            class="button-group"
+            onclick="homeAddThree()">
+            +3
+          </button>
+        </div>
+      </div>
+      <div class="column">
+        <h3>GUEST</h3>
+        <h2
+          class="score"
+          id="away-score-el">
+          0
+        </h2>
+        <div>
+          <button
+            class="button-group"
+            onclick="awayAddOne()">
+            +1
+          </button>
+          <button
+            class="button-group"
+            onclick="awayAddTwo()">
+            +2
+          </button>
+          <button
+            class="button-group"
+            onclick="awayAddThree()">
+            +3
+          </button>
+        </div>
+      </div>
+    </div>
+    <button
+      id="reset-btn"
+      onclick="reset()">
+      New Game
+    </button>
+    <script src="index.js"></script>
+  </body>
+</html>
